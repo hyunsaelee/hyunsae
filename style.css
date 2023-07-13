@@ -1,0 +1,333 @@
+@charset "UTF-8";
+
+
+/*========reset========*/
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ul {
+    list-style:none;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+
+
+
+/*========layout========*/
+body {
+    background: blue;
+}
+#wrap {
+    max-width:1200px;
+    width: 100%;
+    margin:auto;
+}
+
+
+/* header */
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+}
+h1 {
+    width:219px;
+    /* background:url(img/logo.png) no-repeat; */
+    background-size: contain;
+    padding:10px;
+    
+}
+#gnb {
+    display: flex;
+}
+#gnb a {
+    color:#fff;
+    margin-left:50px;
+}
+.logo-top img{
+    width:100px;
+    
+}
+.logo-top:hover{
+    transition: all 1s ease;
+    background: gold;
+/* }
+#gnb:hover{
+    transition: all 1s ease;
+    background: gold; */
+
+}
+li .hover1:hover {
+    transition: all 1s ease;
+    background: gold;
+    width: 80px;
+    height: 50px;
+    text-align: center ;
+    margin: 10px;
+}
+
+li .hover2:hover {
+    transition: all 1s ease;
+    background: gold;
+    width: 100px;
+    height: 50px;
+    text-align: center ;
+    margin: 10px;
+ 
+}
+li .hover3:hover {
+    transition: all 1s ease;
+    background: gold;
+    width: 80px;
+    height: 50px;
+    text-align: center ;
+    margin: 10px;
+   
+}
+li .hover4:hover {
+    transition: all 1s ease;
+    background: gold;
+    width: 80px;
+    height: 50px;
+    text-align: center ;
+    margin: 10px;
+    
+}
+li .hover5:hover {
+    transition: all 1s ease;
+    background: gold;
+    width: 80px;
+    height: 50px;
+    text-align: center ;
+    margin: 10px;
+    
+}
+
+/* container */
+#container {
+    display: flex;
+    justify-content: space-between;
+    /* transform: translateX(20%); */
+}
+#content {
+    width:100%;
+    padding:20px;
+}
+.section {
+    padding:150px 0;
+}
+#visual {
+    width:100%;
+    /* height:600px; */
+    /* background:gold; */
+}
+/* video */
+#videowrap {
+    /* height: 100vh; */
+    background: gold;
+
+}
+
+#videowrap .mainvideo {
+/* 
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; */
+
+
+    width: 80%;
+    transform: translateX( 13%);
+    flex-wrap:wrap;
+    display: flex; 
+}
+.logo {
+    position: absolute;
+    top: 56%;
+    left: 37%;
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+    }
+
+/*protfolio*/
+#portfolio {
+    border-bottom:1px dotted #ccc;
+}
+.section-txt {
+    width: 1160px;
+    padding: 20px 50px;
+    color:#fff;
+    text-align: center;
+}
+.portfolio-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portfolio-list li {
+    width:700px;
+    height:300px;
+    margin-bottom:20px;
+    background:blue;
+    overflow:hidden;
+    transition: all .5s;
+}
+.portfolio-list li:hover {
+    width: 400px;
+    height: 400px;
+    /* background: blue; */
+    /* mix-blend-mode: difference; */
+    /* filter: contrast(1); */
+    border-radius:50%;
+    border: 10px solid;
+    border-color: gold;
+    /* opacity: .7; */
+}
+.portfolio-list li:hover img {
+    filter: brightness(50%) invert(100%);
+}
+
+.portfolio-list li a {
+    position: relative;
+    width:100%;
+    height:100%;
+}
+.portfolio-list li img {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:100%;
+}
+
+
+/*profile*/
+#profile {
+    display: flex;
+    justify-content: center;
+}
+#profile .img-wrap {
+    width:700px;
+    height: 300px;
+    /* overflow:hidden; */
+    transition: all .5s;
+   
+    
+}
+
+#profile .img-wrap img {
+    width:100%;
+}
+#profile .img-wrap:hover {
+    width: 400px;
+    height: 400px;
+    /* background: #fff; */
+    /* mix-blend-mode: difference; */
+    border-radius:50%;
+    border: 10px solid;
+    border-color: gold;
+    
+    /* opacity: .7; */
+}
+#profile .img-wrap:hover img {
+    filter: invert(50%) ;
+}
+.profile {
+    width: 1160px;
+    padding: 20px 50px;
+    color:#fff;
+    text-align: center;
+    
+}
+.instagram {
+    color: #fff;
+    text-decoration: none;
+}
+.instagram:hover{
+    transition: all 1s ease;
+    background: gold;
+
+}
+
+
+/* footer */
+#footer {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 1200px;
+    border-top: 1px solid #555;
+    align-content: center;
+    flex-wrap: wrap;
+    /* transform: translateY(2000%) translateX(-130%); */
+}
+#footer .logo-bottom img {
+    width:100px;
+   
+}
+.logo-bottom:hover{
+    transition: all 1s ease;
+    background: gold;
+    
+
+}
+#footer p {
+    color:#aaa;
+}
+
+
+/*detail*/
+.detail h2 {
+    color:#fff;
+}
+.detail .info {
+    margin:20px 0;
+    color:#fff;
+}
+.detail .object .img-wrap {
+    width:70%;
+    display: inline-block;
+}
+.detail .object .img-wrap img {
+    display: flex;
+    width:80%;
+}
+.detail .object .txt {
+    padding:20px 20px 100px;
+    color:#fff;
+}
+.detail .object .doggoanimation {
+    width: 1160px;
+}
+.detail .object .doggoanimation .doggowalking {
+    width: 50%;
+}
+
+.detail .object .doggoanimation .doggosmocking{
+    width: 70%;
+}
+
+.detail .object .birdanimation {
+    width: 60%;
+}
+
+
+pre {
+    font-size: large;
+    position: absolute;
+    text-align: center;
+}
+.detail .object .img-wrap-poem img {
+    width: 1200px
+    
+}
